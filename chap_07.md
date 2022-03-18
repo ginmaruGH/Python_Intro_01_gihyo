@@ -19,4 +19,28 @@
 
 ### input()関数の働き
 
+#### int()関数を使用して数値を受け取る
 
+- rollercoaster.py
+
+#### 余剰演算子 %
+
+- even_or_odd.py
+
+### whileループの紹介
+
+#### whileループの動作
+
+- counting.py
+
+#### いつ停止するかをユーザーに選ばせる
+
+- parrot2.py
+
+#### フラグを使う
+
+- parrot3.py
+
+#### breakを使用してループを終了する
+
+- cities.py
