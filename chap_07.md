@@ -27,6 +27,8 @@
 
 - even_or_odd.py
 
+---
+
 ### whileループの紹介
 
 #### whileループの動作
@@ -44,3 +46,27 @@
 #### breakを使用してループを終了する
 
 - cities.py
+
+#### ループの中でcontinueを使う
+
+- counting2.py
+
+#### 無限ループを回避する
+
+- counting3.py
+
+---
+
+### whileループをリストと辞書で使用する
+
+#### あるリストから別のリストに要素を移動する
+
+- confirmed_users.py
+
+#### リストから特定の値をすべて削除する
+
+- pets.py
+
+#### ユーザーの入力から辞書を作る
+
+- mountain_poll.py
