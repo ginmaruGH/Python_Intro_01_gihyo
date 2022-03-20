@@ -2,7 +2,7 @@
 
 最短距離でゼロからしっかり学ぶPython入門「必修編」
 
-[サポートページ](https://github.com/takanory/saitan-python)
+[サポートページ GitHub](https://github.com/takanory/saitan-python)
 
 [Original Support site](https://nostarch.com/pythoncrashcourse2e)
 

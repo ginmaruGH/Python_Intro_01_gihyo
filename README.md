@@ -1,6 +1,4 @@
-# Python Crash Course [First Part]
-
-最短距離でゼロからしっかり学ぶPython入門「必修編」
+# 最短距離でゼロからしっかり学ぶPython入門「必修編」
 
 [サポートページ GitHub](https://github.com/takanory/saitan-python)
 
@@ -12,9 +10,4 @@
 
 [The Zen of Python 解題 - 前編](https://atsuoishimoto.hatenablog.com/entry/20100920/1284986066)
 [The Zen of Python 解題 - 後編](https://atsuoishimoto.hatenablog.com/entry/20100926/1285508015)
-
----
-
-## Chapter05 if文
-
 
