@@ -6,9 +6,9 @@
 
 [Original Support site](https://nostarch.com/pythoncrashcourse2e)
 
-[Original GitHub](https://ehmatthes.github.io/pcc_2e/)
+[Coding is political](https://ehmatthes.github.io/pcc_2e/)
 
-<https://github.com/ehmatthes/pcc_2e/>
+[Original GitHub](https://github.com/ehmatthes/pcc_2e/)
 
 ---
 
