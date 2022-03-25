@@ -137,8 +137,47 @@
 - pizza4.py
 - making_pizzas.py
 - `import <module_name>`
-  - `module_name.function_name()`
+  - `<module_name>.<function_name>()`
 
 #### 特定の関数をインポートする
 
+- `from <module_name> import <function_name>`
+  - `<function_name>()`
+- `from <module_name> import <function_0>, <function_1>, <function_2>`
+  - `<function_0>()`
+  - `<function_1>()`
+  - `<function_2>()`
 
+#### asを使用して関数に別名を付ける（asキーワード）
+
+- `from <module_name> import <function_name> as fn`
+  - `fn()`
+
+#### asを使用してモジュールに別名を付ける
+
+- `import <module_name> as mn`
+  - `mn.<function_name>()`
+
+#### モジュールの全関数をインポートする
+
+- `from <module_name> import *`
+  - `<function_name>()`
+
+- Pythonは、同じ名前の関数や変数を見つけた場合、すべての関数を別々にインポートせずに上書きする
+- 必要な関数だけインポートするか、モジュール全体をインポートしてドット（`.`）を使って関数を呼び出すのが最良の方法
+
+---
+
+### 関数のスタイル
+
+- 関数にはわかりやすい名前を付ける
+- 名前にはアルファベットの小文字とアンダースコア（`_`）だけを使う
+- モジュール名も同じ
+- すべての関数には、その関数が何を実行するかを完結に説明するコメントを書く
+  - docstring形式で書く
+  - 関数名、必要な引数、戻り値の種類
+- 仮引数にデフォルト値を指定する場合、等号（`=`）の左右にスペースを入れない
+  - `def <function_name>(parameter_0, parameter_1='default_value')`
+    - `<function_name>(value_0, parameter_1='value_1')`
+- プログラムやモジュールに2つ以上の関数がある場合は、関数の間に2行の空行を入れる
+- すべてのimport文はファイルの先頭に記述する
