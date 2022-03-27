@@ -1,7 +1,8 @@
-# 9-05.ログイン試行回数
+# 9-07.管理者
 
 class User:
     """ユーザーのプロフィールを表すクラス"""
+
     def __init__(self, first_name, last_name, username, email, location):
         """ユーザーを初期化する"""
         self.first_name = first_name.title()
@@ -31,12 +32,28 @@ class User:
         self.login_attempts = 0
 
 
-tanji = User('tanjiro', 'kamado', 'tanji', 'tanji@example.com', 'chiyoda')
-tanji.describe_user()
-tanji.greet_user()
+class Admin(User):
+    """管理者権限を持ったユーザーを表すクラス"""
 
-print("\n3回ログインを試します。")
-tanji.increment_login_attempts()
-tanji.increment_login_attempts()
-tanji.increment_login_attempts()
-print(f" ログイン試行回数: {tanji.login_attempts}")
+    def __init__(self, first_name, last_name, username, email, location):
+        """管理者ユーザーを初期化する"""
+        super().__init__(first_name, last_name, username, email, location)
+        self.privileges = []
+
+    def show_privileges(self):
+        """管理者が持っている権限を出力する"""
+        print("\n権限の一覧")
+        for privilege in self.privileges:
+            print(f"- {privilege}")
+
+
+print("\n# 9-07.管理者\n")
+tanji = Admin('tanjiro', 'kamado', 'tanji', 'tanji@example.com', 'chiyoda')
+tanji.describe_user()
+
+tanji.privileges = [
+    "投稿を追加する",
+    "投稿を削除する",
+    "ユーザーを利用禁止にする",
+]
+tanji.show_privileges()
