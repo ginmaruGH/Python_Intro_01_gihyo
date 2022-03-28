@@ -17,3 +17,40 @@
 ---
 
 ## Chapter10 ファイルと例外
+
+### ファイルを読み込む
+
+#### ファイル全体を読み込む
+
+- pi_digits.txt
+- file_reader.py
+
+#### 1行づつ読み込む
+
+- pi_digits.txt
+- file_reader2.py
+
+#### ファイルの行からリストを作成する
+
+- pi_digits.txt
+- file_reader3.py
+
+#### ファイルの内容を操作する
+
+- Pythonはテキストファイルを読み込む際、ファイル内のすべてのテキストを文字列型として解釈する。
+- 読み込んだ数字を数値として扱いたい場合は、
+  - `int()`関数を使って整数に変換する
+  - `float()`関数を使って浮動小数点に変換する
+- pi_digits.txt
+- pi_string.py
+
+#### 100万桁の巨大なファイル
+
+- pi_million_digits.txt
+- pi_string2.py
+
+#### πの中に誕生日が含まれているか
+
+- pi_million_digits.txt
+- pi_string3.py
+

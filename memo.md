@@ -1,6 +1,6 @@
 # memo
 
-push an existing repository from the command line
+push an existing repository from the command line<br>
 （コマンドラインから既存のリポジトリをプッシュする）
 
 ```bash
@@ -14,9 +14,9 @@ git branch -M main
 # git branch --move --force
 ```
 
-[git push --set-upstream](https://git-scm.com/docs/git-push#Documentation/git-push.txt---set-upstream)
-
-[git-pull[1]](https://git-scm.com/docs/git-pull)
+- reference
+  - [git push --set-upstream](https://git-scm.com/docs/git-push#Documentation/git-push.txt---set-upstream)
+  - [git-pull[1]](https://git-scm.com/docs/git-pull)
 
 ```bash
 git push -u origin main
