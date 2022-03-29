@@ -54,3 +54,27 @@
 - pi_million_digits.txt
 - pi_string3.py
 
+---
+
+### ファイルに書き込む
+
+#### 空のファイルを書き込む
+
+- write_message.py
+  - programing.txt
+- `open(<filename>, 'r')`
+  - read
+- `open(<filename>, 'w')`
+  - write
+  - 書き込み先が存在しない場合、ファイルを自動的に作成する
+  - 同名のファイルがある場合、既存のファイル内容を消去する
+- `open(<filename>, 'a')`
+- `open(<filename>, 'r+')`
+  - append
+
+- Pythonがテキストファイルに書き出せるのは、文字列のみ。
+- 数値データをテキストファイルに保存するには、事前に`str()`関数を使ってデータを文字列型に変換する必要がある。
+
+#### 複数行を書き込む
+
+
