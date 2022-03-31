@@ -90,3 +90,17 @@
   - 書き込んだ行は、ファイルの末尾に追加される。
   - ファイルが存在しない場合、Pythonは空のファイルを作成する。
   - write_message3.py
+
+---
+
+### 例外
+
+#### `ZeroDivisionError`を例外処理する
+
+- division_calculator.py
+- try-exceptブロック
+
+#### クラッシュ回避のために例外を使用する
+
+- division_calculator2.py
+
