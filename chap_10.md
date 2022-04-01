@@ -104,3 +104,22 @@
 
 - division_calculator2.py
 
+#### elseブロック
+
+- division_calculator3.py
+- try-except-elseブロック
+  - try
+    - Pythonはtryブロックの中のコードを実行しようとする。
+    - tryブロックに含めるのは、例外を発生させる可能性のあるコードだけにすべき。
+  - else
+    - tryブロックが成功したときだけ実行するコードを追加する場合がある。
+    - このようなコードは、elseブロックに書く。
+  - except
+    - tryブロックでコードを実行したときに、特定の例外が発生した場合の処理方法を、Pythonに指示する。
+
+#### FileNotFoundErrorを例外処理する
+
+
+
+
+
