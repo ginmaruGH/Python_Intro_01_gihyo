@@ -119,7 +119,22 @@
 
 #### FileNotFoundErrorを例外処理する
 
+- alice.py
 
+#### テキストを分析する
 
+- [Project Gutenberg](https://gutenberg.org/)
+- [青空文庫](https://www.aozora.gr.jp/)
+- alice2.py
+
+#### 複数のファイルを扱う
+
+- word_count.py
+
+#### 静かに失敗する
+
+- word_count2.py
+
+#### 通知対象のエラーを決める
 
 

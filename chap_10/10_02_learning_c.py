@@ -3,7 +3,7 @@
 
 print("\n10-02.C言語を学ぶ\n")
 
-filename = '/Users/takeru/Library/CloudStorage/OneDrive-個人用/Learn/Python/Python_Intro_01_gihyo/chap_10/learning_python.txt'
+filename = 'chap_10/learning_python.txt'
 
 with open(filename) as f:
     lines = f.readlines()

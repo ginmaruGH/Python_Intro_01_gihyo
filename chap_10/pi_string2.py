@@ -4,7 +4,7 @@
 
 print("\n100万桁の巨大なファイル\n")
 
-filename = '/Users/takeru/Library/CloudStorage/OneDrive-個人用/Learn/Python/Python_Intro_01_gihyo/chap_10/pi_million_digits.txt'
+filename = 'chap_10/pi_million_digits.txt'
 
 with open(filename) as file_object:
     lines = file_object.readlines()
