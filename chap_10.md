@@ -137,4 +137,26 @@
 
 #### 通知対象のエラーを決める
 
+---
 
+### データを保存する
+
+#### json.dump()とjson.load()を使用する
+
+- JSON（JavaScript Object Notation）
+- number_writer.py
+- number_reader.py
+- numbers.json
+
+#### ユーザーが生成したデータを保存して読み込む
+
+- remember_me.py
+- greet_user.py
+- username.json
+- remember_me2.py
+
+#### リファクタリング
+
+- リファクタリング
+  - コードをより簡潔でわかりやすく、拡張しやすくする
+- remember_me3.py
