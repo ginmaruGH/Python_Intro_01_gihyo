@@ -26,12 +26,15 @@ class AlienInvasion:
             self._check_events()
             self._update_screen()
 
-
     def _check_events(self):
         """キーボードとマウスのイベントに対応する"""
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_RIGHT:
+                    # 宇宙船を右に移動する
+                    self.ship.rect.x += 1
 
     def _update_screen(self):
         """画面上の画像を更新し、新しい画面に切り替える"""

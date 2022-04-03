@@ -1,8 +1,10 @@
-# Python Crash Course [Second Part]
+Python Crash Course - Second Part -
 
 最短距離でゼロからしっかり学ぶPython入門「実践編」
 
 ゲーム開発・データ可視化・Web開発
+
+---
 
 [サポートページ GitHub](https://github.com/takanory/saitan-python)
 
@@ -18,9 +20,11 @@
 
 ---
 
-## Project 1 エイリアン侵略ゲーム
+# Project 1 エイリアン侵略ゲーム
 
-### Chapter 01 弾を発射する宇宙船
+## Chapter01 弾を発射する宇宙船
+
+### プロジェクトの計画を立てる
 
 - エイリアン侵略ゲームでプレイヤーは画面の下部中央に表示される宇宙船を操縦する
 - プレイヤーは、[←][→]キーで宇宙船を左右に動かし、[Space]キーで弾を発射する
@@ -30,7 +34,7 @@
 - エイリアンがプレイヤーの宇宙船に衝突するか画面の一番下に到達すると、プライヤーは宇宙船を1機失う
 - プレイヤーが宇宙船を3機失うとゲームは終了する
 
-#### Pygameをインストールする
+### Pygameをインストールする
 
 ```bash
 python3 -m pip install --user pygame
@@ -42,53 +46,116 @@ Installing collected packages: pygame
 Successfully installed pygame-2.1.2
 ```
 
-#### ゲームのプロジェクトを開始する
+### ゲームのプロジェクトを開始する
 
 - alien_invasion.py
 
-##### 背景色を設定する
+#### 背景色を設定する
 
-##### Settingsクラスを作成する
+#### Settingsクラスを作成する
 
 - settings.py
 
 ---
 
-#### 宇宙船の画像を追加する
+### 宇宙船の画像を追加する
 
 - [Pixabay](https://pixabay.com/)
 
-##### Shipクラスを作成する
+#### Shipクラスを作成する
 
 - ship.py
 
-##### 宇宙船を描画する
+#### 宇宙船を描画する
 
 - alien_invasion.py
 
 ---
 
-#### リファクタリング：_check_events()と_update_screen()メソッド
+### リファクタリング：_check_events()と_update_screen()メソッド
 
-##### _check_events()メソッド
+- ヘルパーメソッド
+  - クラスの内部で動作するもの
+  - インスタンス経由で呼び出すことは意図していない
+  - 名前の先頭にアンダースコア（`_`）を付ける
+    - `_helper_method()`
+
+#### _check_events()メソッド
 
 - alien_invasion.py
 
-##### _update_screen()メソッド
+#### _update_screen()メソッド
 
 - alien_invasion.py
+
+---
+
+### 宇宙船を操縦する
+
+#### キー入力に反応する
+
+- alien-invasion.py
+
+#### 連続した移動に対応する
+
+- ship.py
+- alien-invasion.py
+
+#### 左右に移動する
+
+#### 宇宙船のスピードを調整する
+
+#### 宇宙船の移動範囲を制限する
+
+#### _check_events()をリファクタリングする
+
+#### Qを押したら終了する
+
+#### ゲームをフルスクリーンモードで実行する
+
+---
+
+### 振り返り
+
+#### alien_invasion.py
+
+#### settings.py
+
+#### ship.py
+
+---
+
+### 弾を発射する
+
+#### 弾の設定を追加する
+
+#### Bulletクラスを作成する
+
+#### 複数の弾をグループに格納する
+
+#### 弾を発射する
+
+#### 古い弾を削除する
+
+#### 玉の数を制限する
+
+#### _update_bullets()メソッドを作成する
+
+---
+
+### まとめ
 
 ---
 
 &nbsp;
 
-### Chapter 02 エイリアン！
+## Chapter02 エイリアン！
 
 ---
 
 &nbsp;
 
-### Chapter 03 得点を表示する
+## Chapter03 得点を表示する
 
 ---
 
