@@ -56,4 +56,32 @@
 
 #### さまざまなassertメソッド
 
+- `unittest.TestCase`クラスの`assert`メソッド
+  - `assertEqual(a, b)`
+    - aとbが等しい（a == b）
+  - `assertNotEqual(a, b)`
+    - aとbが等しくない（a != b）
+  - `assertTrue(x)`
+    - xがTrueである
+  - `assertFalse(x)`
+    - xがFalseである
+  - `assertIn(item, list)`
+    - itemがlistの中にある
+  - `assertNotIn(item, list)`
+    - itemがlistの中にない
+
+#### テスト対象のクラス
+
+- survey.py
+- language_survey.py
+
+#### AnonymousSurveyクラスをテストする
+
+- test_survey.py
+- survey.py
+
+#### setUp()メソッド
+
+- test_survey2.py
+- survey.py
 
