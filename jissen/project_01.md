@@ -74,6 +74,10 @@ Successfully installed pygame-2.1.2
 
 - alien_invasion.py
 
+##### _update_screen()メソッド
+
+- alien_invasion.py
+
 ---
 
 &nbsp;
