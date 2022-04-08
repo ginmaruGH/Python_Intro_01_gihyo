@@ -22,12 +22,14 @@ class AlienInvasion:
         pygame.display.set_caption("エイリアン侵略")
 
         self.ship = Ship(self)
+        self.bullets = pygame.sprite.Group()
 
     def run_game(self):
         """ゲームのメインループを開始する"""
         while True:
             self._check_events()
             self.ship.update()
+            self.bullets.update()
             self._update_screen()
 
     def _check_events(self):
