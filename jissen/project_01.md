@@ -195,6 +195,9 @@ Successfully installed pygame-2.1.2
 
 #### 複数の列を追加する
 
+- `available_space_y = settings.screen_height - (3 * alien_height) - ship_height`
+- `number_rows = available_space_y // (2 * alien_height)`
+
 ---
 
 ### 艦隊を動かす
