@@ -20,3 +20,6 @@ class Settings:
 
         # エイリアンの設定
         self.alien_speed = 1.0
+        self.fleet_drop_speed = 10
+        # 艦隊の移動方向を表す（右: 1, 左: -1）
+        self.fleet_direction = 1
