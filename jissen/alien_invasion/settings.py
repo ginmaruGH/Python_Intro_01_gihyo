@@ -10,6 +10,7 @@ class Settings:
 
         # 宇宙船の設定
         self.ship_speed = 1.5
+        self.ship_limit = 3
 
         # 弾の設定
         self.bullet_speed = 2.0
@@ -19,7 +20,7 @@ class Settings:
         self.bullets_allowed = 3
 
         # エイリアンの設定
-        self.alien_speed = 100.0
+        self.alien_speed = 10.0
         self.fleet_drop_speed = 10
         # 艦隊の移動方向を表す（右: 1, 左: -1）
         self.fleet_direction = 1
