@@ -94,11 +94,16 @@ class AlienInvasion:
 
         # 最初の列のエイリアンを作成する
         for alien_number in range(number_aliens_x):
-            # エイリアンを1匹作成し、列の中に配置する
-            alien = Alien(self)
-            alien.x = alien_width + 2 * alien_width * alien_number
-            alien.rect.x = alien.x
-            self.aliens.add(alien)
+            self._create_alien(alien_number)
+
+    def _create_alien(self, alien_number):
+        """エイリアンを1匹作成し、列の中に配置する"""
+        alien = Alien(self)
+        alien_width = alien.rect.width
+        alien.x = alien_width + 2 * alien_width * alien_number
+        alien.rect.x = alien.x
+        self.aliens.add(alien)
+
 
     def _update_screen(self):
         """画面上の画像を更新し、新しい画面に切り替える"""
