@@ -36,6 +36,7 @@ class AlienInvasion:
             self._check_events()
             self.ship.update()
             self._update_bullets()
+            self._update_aliens()
             self._update_screen()
 
     def _check_events(self):
@@ -83,6 +84,10 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
         # print(len(self.bullets))
 
+    def _update_aliens(self):
+        """艦隊にいる全エイリアンの位置を更新する"""
+        self.aliens.update()
+
     def _create_fleet(self):
         """エイリアンの艦隊を作成する"""
         # 1匹のエイリアンを作成し、1列のエイリアンの数を求める
@@ -109,7 +114,8 @@ class AlienInvasion:
         alien_width, alien_height = alien.rect.size
         alien.x = alien_width + 2 * alien_width * alien_number
         alien.rect.x = alien.x
-        alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
+        # alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
+        alien.rect.y = alien_height + 2 * alien_height * row_number
         self.aliens.add(alien)
 
 
