@@ -89,6 +89,10 @@ class AlienInvasion:
         collisions = pygame.sprite.groupcollide(
             self.bullets, self.aliens, True, True
         )
+        if not self.aliens:
+            # 存在する弾を破壊し、新しい艦隊を作成する
+            self.bullets.empty()
+            self._create_fleet()
 
     def _update_aliens(self):
         """
