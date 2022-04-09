@@ -107,6 +107,10 @@ class AlienInvasion:
         self._check_fleet_edges()
         self.aliens.update()
 
+        # エイリアンと宇宙船の衝突を探す
+        if pygame.sprite.spritecollideany(self.ship, self.aliens):
+            print("宇宙船にぶつかった！！！")
+
     def _create_fleet(self):
         """エイリアンの艦隊を作成する"""
         # 1匹のエイリアンを作成し、1列のエイリアンの数を求める

@@ -232,6 +232,8 @@ Successfully installed pygame-2.1.2
 
 #### エイリアンと宇宙船の衝突を検出する
 
+- ` pygame.sprite.spritecollideany()`関数
+
 #### エイリアンと宇宙船の衝突に対応する
 
 #### エイリアンが画面の一番下に到達する
