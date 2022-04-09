@@ -188,6 +188,9 @@ Successfully installed pygame-2.1.2
 
 #### 1列のエイリアンを作成する
 
+- `available_space_x = settings.screen_width - ( 2 * alien_width)`
+- `number_aliens_x = available_space_x // (2 * alien_width)`
+
 #### _create_fleet()をリファクタリングする
 
 #### 複数の列を追加する
