@@ -216,6 +216,8 @@ Successfully installed pygame-2.1.2
 
 #### 弾が衝突したことを検出する
 
+- `sprite.groupcollide()`メソッド
+
 #### テスト用に大きな弾を作成する
 
 #### 艦隊を再度出現させる

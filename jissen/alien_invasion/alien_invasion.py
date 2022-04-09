@@ -84,6 +84,12 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
         # print(len(self.bullets))
 
+        # 弾がエイリアンに当たったかを調べる
+        #   その場合は対象の弾とエイリアンを廃棄する
+        collisions = pygame.sprite.groupcollide(
+            self.bullets, self.aliens, True, True
+        )
+
     def _update_aliens(self):
         """
         艦隊が画面の端にいるか確認してから、
