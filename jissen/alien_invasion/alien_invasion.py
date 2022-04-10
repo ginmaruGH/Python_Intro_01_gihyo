@@ -79,6 +79,9 @@ class AlienInvasion:
             self._create_fleet()
             self.ship.center_ship()
 
+            # マウスカーソルを非表示にする
+            pygame.mouse.set_visible(False)
+
     def _check_keydown_events(self, event):
         """キーを押すイベントに対応する"""
         if event.key == pygame.K_RIGHT:
@@ -171,6 +174,7 @@ class AlienInvasion:
             sleep(0.5)
         else:
             self.stats.game_active = False
+            pygame.mouse.set_visible(True)
 
     def _create_fleet(self):
         """エイリアンの艦隊を作成する"""
