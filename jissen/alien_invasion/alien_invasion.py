@@ -76,6 +76,7 @@ class AlienInvasion:
             self.stats.game_active = True
             self.sb.prep_score()
             self.sb.prep_level()
+            self.sb.prep_ships()
 
             # 残ったエイリアンと弾を廃棄する
             self.aliens.empty()
@@ -178,6 +179,7 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
             # 残りの宇宙船の数を減らす
             self.stats.ships_left -= 1
+            self.sb.prep_ships()
 
             # 残ったエイリアンと弾を廃棄する
             self.aliens.empty()
