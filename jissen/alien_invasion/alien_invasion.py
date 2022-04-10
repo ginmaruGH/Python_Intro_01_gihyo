@@ -116,6 +116,18 @@ class AlienInvasion:
             # print("宇宙船にぶつかった！！！")
             self._ship_hit()
 
+        # 画面の一番下に到達したエイリアンを探す
+        self._check_aliens_bottom()
+
+    def _check_aliens_bottom(self):
+        """エイリアンが画面の一番下に到達したかを確認する"""
+        screen_rect = self.screen.get_rect()
+        for alien in self.aliens.sprites():
+            if alien.rect.bottom >= screen_rect.bottom:
+                # 宇宙船を破壊したときと同じように扱う
+                self._ship_hit()
+                break
+
     def _ship_hit(self):
         """エイリアンと宇宙船の衝突に対応する"""
         # 残りの宇宙船の数を減らす
