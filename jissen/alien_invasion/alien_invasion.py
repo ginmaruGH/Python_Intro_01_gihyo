@@ -74,6 +74,7 @@ class AlienInvasion:
             # ゲームの統計情報をリセットする
             self.stats.reset_stats()
             self.stats.game_active = True
+            self.sb.prep_score()
 
             # 残ったエイリアンと弾を廃棄する
             self.aliens.empty()
