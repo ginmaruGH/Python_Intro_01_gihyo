@@ -66,7 +66,17 @@ class AlienInvasion:
     def _check_play_button(self, mouse_pos):
         """プレイヤーがPlayボタンをクリックしたら、新規ゲームを開始する"""
         if self.play_button.rect.collidepoint(mouse_pos):
+            # ゲームの統計情報をリセットする
+            self.stats.reset_stats()
             self.stats.game_active = True
+
+            # 残ったエイリアンと弾を廃棄する
+            self.aliens.empty()
+            self.bullets.empty()
+
+            # 新しい艦隊を制作し、宇宙船を中央に配置する
+            self._create_fleet()
+            self.ship.center_ship()
 
     def _check_keydown_events(self, event):
         """キーを押すイベントに対応する"""
@@ -116,7 +126,6 @@ class AlienInvasion:
             # 存在する弾を破壊し、新しい艦隊を作成する
             self.bullets.empty()
             self._create_fleet()
-
 
     def _update_aliens(self):
         """
