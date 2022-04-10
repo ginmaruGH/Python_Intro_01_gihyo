@@ -67,6 +67,8 @@ class AlienInvasion:
         """プレイヤーがPlayボタンをクリックしたら、新規ゲームを開始する"""
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
         if button_clicked and not self.stats.game_active:
+            # ゲームの設定値をリセットする
+            self.settings.initialize_dynamic_settings()
             # ゲームの統計情報をリセットする
             self.stats.reset_stats()
             self.stats.game_active = True
