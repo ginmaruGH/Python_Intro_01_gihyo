@@ -130,6 +130,7 @@ class AlienInvasion:
             # 存在する弾を破壊し、新しい艦隊を作成する
             self.bullets.empty()
             self._create_fleet()
+            self.settings.increase_speed()
 
     def _update_aliens(self):
         """
