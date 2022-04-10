@@ -5,6 +5,7 @@ import pygame
 
 from settings import Settings
 from game_stats import GameStats
+from scoreboard import Scoreboard
 from button import Button
 from ship import Ship
 from bullet import Bullet
@@ -28,6 +29,7 @@ class AlienInvasion:
 
         # ゲームの統計情報を格納するインスタンスを生成する
         self.stats = GameStats(self)
+        self.sb = Scoreboard(self)
 
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
@@ -229,6 +231,9 @@ class AlienInvasion:
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
         self.aliens.draw(self.screen)
+
+        # 得点の情報を描画する
+        self.sb.show_score()
 
         # ゲームが非アクティブ状態のときに「Play」ボタンを描画する
         if not self.stats.game_active:
