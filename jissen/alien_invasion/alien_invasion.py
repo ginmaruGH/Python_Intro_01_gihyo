@@ -130,19 +130,22 @@ class AlienInvasion:
 
     def _ship_hit(self):
         """エイリアンと宇宙船の衝突に対応する"""
-        # 残りの宇宙船の数を減らす
-        self.stats.ships_left -= 1
+        if self.stats.ships_left > 0:
+            # 残りの宇宙船の数を減らす
+            self.stats.ships_left -= 1
 
-        # 残ったエイリアンと弾を廃棄する
-        self.aliens.empty()
-        self.bullets.empty()
+            # 残ったエイリアンと弾を廃棄する
+            self.aliens.empty()
+            self.bullets.empty()
 
-        # 新しい艦隊を生成し、宇宙船を中央に配置する
-        self._create_fleet()
-        self.ship.center_ship()
+            # 新しい艦隊を生成し、宇宙船を中央に配置する
+            self._create_fleet()
+            self.ship.center_ship()
 
-        # 一時停止する
-        sleep(0.5)
+            # 一時停止する
+            sleep(0.5)
+        else:
+            self.stats.game_active = False
 
     def _create_fleet(self):
         """エイリアンの艦隊を作成する"""
