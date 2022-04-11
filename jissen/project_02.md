@@ -67,7 +67,7 @@ Installing collected packages: six, pyparsing, pillow, numpy, kiwisolver, fontto
 Successfully installed cycler-0.11.0 fonttools-4.32.0 kiwisolver-1.4.2 matplotlib-3.5.1 numpy-1.22.3 packaging-21.3 pillow-9.1.0 pyparsing-3.0.8 python-dateutil-2.8.2 six-1.16.0
 ```
 
-[Matplotlib sample gallery](https://matplotlib.org/gallery/)
+[Matplotlib sample gallery](https://matplotlib.org/stable/gallery/index.html)
 
 ### 簡単な折れ線グラフを描画する
 
