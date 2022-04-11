@@ -20,7 +20,7 @@ Python Crash Course - Second Part -
 
 ---
 
-# Project 1 エイリアン侵略ゲーム
+# Project01 エイリアン侵略ゲーム
 
 ## Chapter01 弾を発射する宇宙船
 
