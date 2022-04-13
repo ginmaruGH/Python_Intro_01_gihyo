@@ -71,6 +71,25 @@ Successfully installed cycler-0.11.0 fonttools-4.32.0 kiwisolver-1.4.2 matplotli
 
 ### 簡単な折れ線グラフを描画する
 
+- ラベルと線の太さを変更する
+- グラフを修正する
+- 組み込みのスタイルを使用する
+
+```bash
+python3
+>>> import matplotlib.pyplot as plt
+>>> plt.style.available
+['Solarize_Light2', '_classic_test_patch', '_mpl-gallery', '_mpl-gallery-nogrid', 'bmh', 'classic', 'dark_background', 'fast', 'fivethirtyeight', 'ggplot', 'grayscale', 'seaborn', 'seaborn-bright', 'seaborn-colorblind', 'seaborn-dark', 'seaborn-dark-palette', 'seaborn-darkgrid', 'seaborn-deep', 'seaborn-muted', 'seaborn-notebook', 'seaborn-paper', 'seaborn-pastel', 'seaborn-poster', 'seaborn-talk', 'seaborn-ticks', 'seaborn-white', 'seaborn-whitegrid', 'tableau-colorblind10']
+>>> exit()
+```
+
+- scatter()で複数の点にスタイルを指定して描画する
+- scatter()で連続した点を描画する
+- データを自動的に計算する
+- 色をカスタマイズする
+- カラーマップを使用する
+- グラフを自動的に保存する
+
 ### ランダムウォーク
 
 ### Plotlyでサイコロを転がす
