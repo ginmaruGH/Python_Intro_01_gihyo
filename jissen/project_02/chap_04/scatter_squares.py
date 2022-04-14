@@ -10,7 +10,8 @@ fig, ax = plt.subplots()
 # ax.scatter(x_values, y_values, s=100)
 # ax.scatter(x_values, y_values, s=10)
 # ax.scatter(x_values, y_values, c='red', s=10)
-ax.scatter(x_values, y_values, c=(0, 0.8, 0), s=10)
+# ax.scatter(x_values, y_values, c=(0, 0.8, 0), s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # グラフのタイトルと軸ラベルを設定する
 ax.set_title("Square Numbers", fontsize=24)

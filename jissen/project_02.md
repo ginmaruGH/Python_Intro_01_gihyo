@@ -88,6 +88,8 @@ python3
 - データを自動的に計算する
 - 色をカスタマイズする
 - カラーマップを使用する
+  - [matplotlib](https://matplotlib.org/)
+  - [Colormap reference](https://matplotlib.org/stable/gallery/color/colormap_reference.html?highlight=colormap%20reference)
 - グラフを自動的に保存する
 
 ### ランダムウォーク
