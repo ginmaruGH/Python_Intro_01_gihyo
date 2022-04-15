@@ -24,7 +24,7 @@ ax.tick_params(axis='both', which='major', labelsize=14)
 # 各軸の範囲を設定する
 ax.axis([0, 1100, 0, 1100000])
 
-# plt.show()
+plt.show()
 plt.savefig(
     'jissen/project_02/chap_04/squares_plot.png',
     bbox_inches='tight'
