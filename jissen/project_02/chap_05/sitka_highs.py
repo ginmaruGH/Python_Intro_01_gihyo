@@ -3,7 +3,7 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 
-filename = 'jissen/project_02/chap_05/data/sitka_weather_07-2018_simple.csv'
+filename = 'jissen/project_02/chap_05/data/sitka_weather_2018_simple.csv'
 
 with open(filename) as f:
     reader = csv.reader(f)
@@ -24,7 +24,7 @@ ax.plot(dates, highs, c='red')
 
 # グラフにフォーマットを指定する
 plt.title(
-    "Daily high temperatures, July 2018",
+    "Daily high temperatures - 2018",
     fontsize=24
 )
 plt.xlabel('', fontsize=16)
