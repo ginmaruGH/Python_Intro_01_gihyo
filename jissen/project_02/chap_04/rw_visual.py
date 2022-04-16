@@ -15,6 +15,11 @@ while True:
     # ax.scatter(rw.x_values, rw.y_values, s=15)
     point_numbers = range(rw.num_points)
     ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=15)
+
+    # 開始点と終了点を強調する
+    ax.scatter(0, 0, c='green', edgecolors='none', s=100)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
+
     plt.show()
 
     keep_running = input("別のランダムウォークを生成する？（y/n）>> ")
