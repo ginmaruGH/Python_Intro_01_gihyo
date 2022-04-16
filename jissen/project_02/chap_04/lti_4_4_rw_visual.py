@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from random_walk import RandomWalk
+from lti_4_4_random_walk import RandomWalk
 
 # プログラムが動作している間、新しいランダムウォークを作成し続ける
 while True:
@@ -20,6 +20,9 @@ while True:
     # 開始点と終了点を強調する
     ax.scatter(0, 0, c='green', edgecolors='none', s=100)
     ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
+
+    # グラフのタイトルと軸のラベルを設定する
+    ax.set_title("Let's Try It! 4-4.Change the random walk", fontsize=24)
 
     # 軸を削除する
     # ax.get_xaxis().set_visible(False)
