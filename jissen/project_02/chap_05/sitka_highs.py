@@ -10,21 +10,24 @@ with open(filename) as f:
     header_row = next(reader)
 
     # ファイルから日付と最高気温を取得する
-    dates, highs = [], []
+    dates, highs, lows = [], [], []
     for row in reader:
         current_date = datetime.strptime(row[2], '%Y-%m-%d')
         high = int(row[5])
+        low = int(row[6])
         dates.append(current_date)
         highs.append(high)
+        lows.append(low)
 
-# 最高気温のグラフを描画する
+# 最高気温と最低気温をグラフに描画する
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
 ax.plot(dates, highs, c='red')
+ax.plot(dates, lows, c='blue')
 
 # グラフにフォーマットを指定する
 plt.title(
-    "Daily high temperatures - 2018",
+    "Daily high amd low temperatures - 2018",
     fontsize=24
 )
 plt.xlabel('', fontsize=16)
