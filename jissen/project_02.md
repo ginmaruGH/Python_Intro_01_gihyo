@@ -106,6 +106,32 @@ python3
 
 ### Plotlyでサイコロを転がす
 
+- Plotlyをインストールする
+
+```bash
+python3 -m pip install --user plotly
+```
+
+```bash
+Collecting plotly
+  Downloading plotly-5.7.0-py2.py3-none-any.whl (28.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.8/28.8 MB 5.5 MB/s eta 0:00:00
+Collecting tenacity>=6.2.0
+  Downloading tenacity-8.0.1-py3-none-any.whl (24 kB)
+Requirement already satisfied: six in /Users/takeru/Library/Python/3.9/lib/python/site-packages (from plotly) (1.16.0)
+Installing collected packages: tenacity, plotly
+Successfully installed plotly-5.7.0 tenacity-8.0.1
+```
+
+[Plotly](https://plot.ly/python/)
+
+- Dieクラスを作成する
+- サイコロを転がす
+- 結果を分析する
+- ヒストグラムを作成する
+- 2個のサイコロを転がす
+- 異なるサイズのサイコロを転がす
+
 ### まとめ
 
 ---
