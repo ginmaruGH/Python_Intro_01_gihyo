@@ -149,7 +149,11 @@ Successfully installed plotly-5.7.0 tenacity-8.0.1
 [NOAA](https://ncdc.noaa.gov/cdo-web/)
 
 - CSVファイルのヘッダーを解析する
+  - csv.reader()
+  - next()関数
 - ヘッダーとその位置を出力する
+  - enumerate()関数
+    - リストをループするときに各要素のインデックスと値を返す
 - データを抽出して読み込む
 - 気温のグラフにデータを描画する
 - datetimeモジュール
