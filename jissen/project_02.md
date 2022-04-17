@@ -166,6 +166,22 @@ Successfully installed plotly-5.7.0 tenacity-8.0.1
 
 ### 地球全体のデータセットを地図に描画する（JSON形式）
 
+- 地震データをダウンロードする
+  - [United States Geological Survey](https://earthquake.usgs.gov/earthquakes/feed/)
+- JSONデータを調査する
+  - （経度・緯度）>（x, y）
+- すべての地震データのリストを作成する
+- マグニチュードを取り出す
+- 位置データを取り出す
+- 世界地図を構築する
+- チャートデータを指定する別の方法
+- マーカーの大きさをカスタマイズする
+- マーカーの色をカスタマイズする
+- ほかのカラースケール
+- ホバーテキストを追加する
+
+### まとめ
+
 ---
 
 &nbsp;
