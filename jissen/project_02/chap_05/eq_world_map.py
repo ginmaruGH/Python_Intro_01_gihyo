@@ -23,21 +23,15 @@ for eq_dict in all_eq_dicts:
     lons.append(lon)
     lats.append(lat)
 
-print(mags[:10])
-print(lons[:5])
-print(lats[:5])
-
-# すべての地震のリストを作成する
-# readable_file = 'jissen/project_02/chap_05/data2/readable_eq_data.json'
-# with open(readable_file, 'w') as f:
-#     json.dump(all_eq_data, f, indent=4)
-
 # 地震の地図
 # data = [Scattergeo(lon=lons, lat=lats)]
 data = [{
-    'type': 'Scattergeo',
+    'type': 'scattergeo',
     'lon': lons,
     'lat': lats,
+    'marker': {
+        'size': [5*mag for mag in mags],
+    },
 }]
 my_layout = Layout(title='世界の地震')
 
