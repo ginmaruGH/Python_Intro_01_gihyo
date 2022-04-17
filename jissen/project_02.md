@@ -188,6 +188,56 @@ Successfully installed plotly-5.7.0 tenacity-8.0.1
 
 ## Chap.06 APIを取り扱う
 
+### Web APIを使う
+
+- GitとGitHub
+  - [GitHub](https://github.com/)
+- API呼び出しを使ってデータをリクエストする
+  - <https://api.github.com/search/repositories?q=language:python&sort=stars>
+- Requestsをインストールする
+
+```bash
+python3 -m pip install --user requests
+```
+
+```bash
+Collecting requests
+  Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 KB 1.7 MB/s eta 0:00:00
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.2/149.2 KB 3.9 MB/s eta 0:00:00
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.0/139.0 KB 3.8 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 2.1 MB/s eta 0:00:00
+Installing collected packages: certifi, urllib3, idna, charset-normalizer, requests
+  WARNING: The script normalizer is installed in '/Users/takeru/Library/Python/3.9/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.12 idna-3.3 requests-2.27.1 urllib3-1.26.9
+```
+
+- APIのレスポンスを処理する
+
+```bash
+ステータスコード: 200
+dict_keys(['total_count', 'incomplete_results', 'items'])
+```
+
+- レスポンスの辞書を処理する
+- 上位のリポジトリを要約する
+- API利用頻度の制限を監視する
+
+### Plotlyを使ってリポジトリを可視化する
+
+### Hacker News API
+
+### まとめ
+
 ---
 
 &nbsp;
