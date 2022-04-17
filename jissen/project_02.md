@@ -231,6 +231,49 @@ dict_keys(['total_count', 'incomplete_results', 'items'])
 - レスポンスの辞書を処理する
 - 上位のリポジトリを要約する
 - API利用頻度の制限を監視する
+  - <https://api.github.com/rate_limit>
+
+```text
+{
+  "resources":{
+    "core":{
+      "limit":60,
+      "remaining":60,
+      "reset":1650224475,
+      "used":0,
+      "resource":"core"
+    },
+    "graphql":{
+      "limit":0,
+      "remaining":0,
+      "reset":1650224475,
+      "used":0,
+      "resource":"graphql"
+    },
+    "integration_manifest":{
+      "limit":5000,
+      "remaining":5000,
+      "reset":1650224475,
+      "used":0,
+      "resource":"integration_manifest"
+    },
+    "search":{
+      "limit":10,
+      "remaining":10,
+      "reset":1650220935,
+      "used":0,
+      "resource":"search"
+    }
+  },
+  "rate":{
+    "limit":60,
+    "remaining":60,
+    "reset":1650224475,
+    "used":0,
+    "resource":"core"
+  }
+}
+```
 
 ### Plotlyを使ってリポジトリを可視化する
 
