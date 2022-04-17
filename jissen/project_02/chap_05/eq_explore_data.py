@@ -1,5 +1,8 @@
 import json
 
+from plotly.graph_objs import Scattergeo, Layout
+from plotly import offline
+
 # データの構造を調査する
 filename = 'jissen/project_02/chap_05/data2/eq_data_1_day_m1.json'
 
@@ -28,3 +31,13 @@ print(lats[:5])
 # readable_file = 'jissen/project_02/chap_05/data2/readable_eq_data.json'
 # with open(readable_file, 'w') as f:
 #     json.dump(all_eq_data, f, indent=4)
+
+# 地震の地図
+data = [Scattergeo(lon=lons, lat=lats)]
+my_layout = Layout(title='世界の地震')
+
+fig = {'data': data, 'layout': my_layout}
+offline.plot(
+    fig,
+    filename='jissen/project_02/chap_05/global_earthquakes.html'
+)
