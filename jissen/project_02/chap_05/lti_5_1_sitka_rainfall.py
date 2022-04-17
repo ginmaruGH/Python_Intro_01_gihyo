@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
 filename = 'jissen/project_02/chap_05/data/sitka_weather_2018_simple.csv'
 
@@ -9,24 +9,25 @@ with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
 
-    # ファイルから日付と最高気温を取得する
-    dates, highs = [], []
+    # ファイルから日付と降水量を取得する
+    dates, precips = [], []
     for row in reader:
         current_date = datetime.strptime(row[2], '%Y-%m-%d')
-        high = int(row[5])
         dates.append(current_date)
-        highs.append(high)
+        precip = float(row[3])
+        precips.append(precip)
 
-# 最高気温のグラフを描画する
+# 降水量をグラフに描画する
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, c='red')
+ax.plot(dates, precips, c='blue')
 
-# グラフにフォーマットを指定する
-plt.title("Daily high temperatures - 2018", fontsize=24)
+# グラフにフォーマットを設定する
+plt.title("Daily Rainfall Amounts - 2018\nSitka", fontsize=20)
 plt.xlabel('', fontsize=16)
 fig.autofmt_xdate()
-plt.ylabel("Temperature (F)", fontsize=16)
+plt.ylabel("Rainfall (in)", fontsize=16)
 plt.tick_params(axis='both', which='major', labelsize=16)
 
+plt.savefig('jissen/project_02/chap_05/lti_5_1_sitka_rainfall.png')
 plt.show()
