@@ -281,6 +281,11 @@ dict_keys(['total_count', 'incomplete_results', 'items'])
 - カスタマイズしたツールチップを追加する
 - グラフにクリック可能なリンクを追加する
 - PlotlyおｙびGitHub APIについてさらに詳しく
+  - [Plotly User Guide in Python](https://plot.ly/python/user-guide/)
+  - [Python Figure Reference](https://plot.ly/python/reference/)
+  - [GitHub Docs](https://docs.github.com/ja)
+  - [GitHub REST API](https://docs.github.com/ja/rest)
+  - [GitHub GraphQL API](https://docs.github.com/ja/graphql)
 
 ### Hacker News API
 
