@@ -277,6 +277,11 @@ dict_keys(['total_count', 'incomplete_results', 'items'])
 
 ### Plotlyを使ってリポジトリを可視化する
 
+- Plotlyのグラフを改良する
+- カスタマイズしたツールチップを追加する
+- グラフにクリック可能なリンクを追加する
+- PlotlyおｙびGitHub APIについてさらに詳しく
+
 ### Hacker News API
 
 ### まとめ
