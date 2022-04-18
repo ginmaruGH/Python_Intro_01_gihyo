@@ -289,6 +289,11 @@ dict_keys(['total_count', 'incomplete_results', 'items'])
 
 ### Hacker News API
 
+- [Hacker News](https://news.ycombinator.com/)
+- <https://hacker-news.firebaseio.com/v0/item/19155826.json>
+- <https://hacker-news.firebaseio.com/v0/topstories.json>
+- [Hacker News API](https://github.com/HackerNews/API)
+
 ### まとめ
 
 ---
