@@ -296,6 +296,14 @@ dict_keys(['total_count', 'incomplete_results', 'items'])
 
 ### まとめ
 
+- 自己完結型のプログラムを書くためのAPIの使い方
+  - APIを使って必要なデータを自動的に収集してそのデータを可視化する方法
+  - GitHub APIを用いてGitHubでもっとも多くのスターがついたPythonプロジェクトを調査
+  - ハッカーニュースAPI
+- Requestsパッケージを使ってGitHubへのAPI呼び出しを自動的に行う方法
+  - API呼び出しの結果を処理する方法
+- グラフの外観をさらにカスタマイズするためのPlotlyの設定
+
 ---
 
 &nbsp;
